@@ -11,5 +11,25 @@ This script works by collecting various pieces of information about the operatin
 
 **Remember to update the URL in the script!**
 
+The script currently pulls the following information:
 
+- Hostname
+- Local IP Address info for DHCP enabled interfaces
+- Wifi SSIDs and security Keys
+- Computer Info: 
+    - Organization
+    - RegisteredOwner
+    - DNSHostName
+    - Domain
+    - Current UserName
+    - Device Manufacturer
+    - Device Model
+    - Device Name
+    - OS Version
+    - BIOS Version
+    - BIOS Serial Number
+- Windows Patch Level
+- Running Services (currently broken!)
+- Local Users
 
+These are all added to their own X-Headers in base64 format and sent via a HTTP GET request to your chosen URL
